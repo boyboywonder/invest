@@ -1,0 +1,134 @@
+/* signup.css */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4ff, #e6f0ff);
+  color: #1b1e3d;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.hero-header {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  padding: 20px 40px;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-login {
+  background-color: #22d3ee;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+/* Form Styles */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.signup-form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 50, 0.08);
+  width: 100%;
+  max-width: 450px;
+}
+
+.signup-form h2 {
+  margin-bottom: 25px;
+  color: #0f172a;
+  text-align: center;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline-color: #3b82f6;
+}
+
+.btn-register {
+  width: 100%;
+  padding: 12px;
+  background-color: #facc15;
+  color: #1f2937;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #eab308;
+}
+
+.signup-form p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.signup-form a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-form a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #e0e0e0, #cfcfcf);
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+}

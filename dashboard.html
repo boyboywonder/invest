@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pure-Coin Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #1e3a8a;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .sidebar button {
+      background: none;
+      border: none;
+      color: white;
+      text-align: left;
+      padding: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .sidebar button:hover,
+    .sidebar button.active {
+      background: #3b82f6;
+      border-radius: 6px;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      background-color: #f1f5f9;
+      overflow-y: auto;
+    }
+
+    .content-section {
+      display: none;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <button class="nav-btn active" data-target="profile"><a href="profile.html">User Profile</a></button>
+    <button class="nav-btn" data-target="crypto">Crypto</button>
+    <button class="nav-btn" data-target="stocks">Stocks</button>
+    <button class="nav-btn" data-target="real-estate">Real Estate</button>
+    <button class="nav-btn" data-target="mutual-funds">Mutual Funds</button>
+    <button class="nav-btn" data-target="investments">Active Investments</button>
+    <button class="nav-btn" data-target="balance">Balance</button>
+    <button class="nav-btn" data-target="logout">Logout</button>
+  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Profile</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6fc;
+    }
+
+    .profile-section {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #1e3a8a; /* Blue background */
+      color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 50, 0.1);
+    }
+
+    .profile-section h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    .profile-section p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .profile-info {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .profile-picture {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-picture img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 3px solid white;
+    }
+
+    .profile-picture input[type="file"] {
+      display: none;
+    }
+
+    .upload-btn {
+      background: #facc15;
+      color: #1e3a8a;
+      font-weight: bold;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .info-details label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .info-details input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .edit-btn {
+      margin-top: 20px;
+      background-color: #22d3ee;
+      color: #000;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .balance-display {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #facc15;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-section" id="profile">
+    <h1>User Profile</h1>
+    <p>Welcome back, investor!</p>
+
+    <div class="profile-info">
+      <div class="profile-picture">
+       
+
+  <script>
+    
+
+  
+  </script>
+</body>
+</html>
+
+  
+    <!-- Placeholder for other sections -->
+    <div class="content-box" id="crypto" style="display: none;">
+      <h2>Crypto Investments</h2>
+      <p>Coming soon...</p>
+    </div>
+    <div class="content-box" id="stocks" style="display: none;">
+      <h2>Stock Portfolio</h2>
+      <p>Coming soon...</p>
+    </div>
+    <div class="content-box" id="realestate" style="display: none;">
+      <h2>Real Estate</h2>
+      <p>Coming soon...</p>
+    </div>
+    <div class="content-box" id="mutual" style="display: none;">
+      <h2>Mutual Funds</h2>
+      <p>Coming soon...</p>
+    </div>
+    <div class="content-box" id="active" style="display: none;">
+      <h2>Active Investments</h2>
+      <p>Coming soon...</p>
+    </div>
+    <div class="content-box" id="balance" style="display: none;">
+      <h2>Wallet Balance</h2>
+      <p>Coming soon...</p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(sectionId) {
+      const allSections = document.querySelectorAll('.content-box');
+      allSections.forEach(sec => sec.style.display = 'none');
+
+      const selectedSection = document.getElementById(sectionId);
+      if (selectedSection) {
+        selectedSection.style.display = 'block';
+      }
+
+      const allMenuItems = document.querySelectorAll('aside ul li');
+      allMenuItems.forEach(item => item.classList.remove('active'));
+      event.target.classList.add('active');
+    }
+
+    // Profile picture preview
+    const uploadInput = document.getElementById("upload");
+    const profilePic = document.getElementById("profile-pic");
+
+    uploadInput?.addEventListener("change", function () {
+      const file = this.files[0];
+      if (file && file.type.startsWith("image/")) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+          profilePic.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+
+    function logout() {
+      alert("You have been logged out!");
+      // Add redirection or actual logout logic if needed
+    }
+  </script>
+</body>
+</html>
+    </div>
+
+    <div id="crypto" class="content-section">
+      <h1>Crypto</h1>
+      <p>View and manage your cryptocurrency investments.</p>
+    </div>
+
+    <div id="stocks" class="content-section">
+      <h1>Stocks</h1>
+      <p>View and manage your stock investments.</p>
+    </div>
+
+    <div id="real-estate" class="content-section">
+      <h1>Real Estate</h1>
+      <p>Explore your real estate investment portfolio.</p>
+    </div>
+
+    <div id="mutual-funds" class="content-section">
+      <h1>Mutual Funds</h1>
+      <p>Manage your mutual fund allocations here.</p>
+    </div>
+
+    <div id="investments" class="content-section">
+      <h1>Active Investments</h1>
+      <p>Track and monitor all your active investments.</p>
+    </div>
+
+    <div id="balance" class="content-section">
+      <h1>Balance</h1>
+      <p>Your current balance and transaction history.</p>
+    </div>
+
+    <div id="logout" class="content-section">
+      <h1><a href="login.html">Logout</a></h1>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.nav-btn');
+    const sections = document.querySelectorAll('.content-section');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Remove active from all buttons and sections
+        buttons.forEach(b => b.classList.remove('active'));
+        sections.forEach(s => s.classList.remove('active'));
+
+        // Add active to clicked button and target section
+        btn.classList.add('active');
+        document.getElementById(btn.dataset.target).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

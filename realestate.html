@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>real-estate</title>
+    <style>
+        :root {
+      --primary-color: #0047ab;
+      --background-color: #f9f9f9;
+      --text-color: #333;
+      --white: #ffffff;
+      --light-grey: #ececec;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: var(--background-color);
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: var(--white);
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+    }
+
+    .sidebar .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar .brand img {
+      width: 40px;
+    }
+
+    .sidebar .brand h2 {
+      color: var(--primary-color);
+      font-size: 20px;
+    }
+
+    .sidebar nav a {
+      display: block;
+      padding: 10px;
+      color: var(--text-color);
+      text-decoration: none;
+      margin: 5px 0;
+      border-radius: 6px;
+    }
+
+    .sidebar nav a:hover, .sidebar nav a.active {
+      background-color: var(--primary-color);
+      color: var(--white);
+    }
+
+    .main {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+    
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f0f4ff, #e6f0ff);
+      margin: 0;
+      padding: 0;
+      color: #1b1e3d;
+    }
+
+    header {
+      background: linear-gradient(to right, #00264d, #004080);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+    <div class="brand">
+      <img src="img/PURECOIN_LOGO-removebg-preview 11.png" alt="Pure-Coin">
+      <h2>Pure-Coin</h2>
+    </div>
+    <nav>
+      <a href="dashboard2.html" >Dashboard</a>
+      <a href="crypto.html">Crypto</a>
+      <a href="stocks.html" >Stocks</a>
+      <a href="realestate.html" class="active">Real Estate</a>
+      <a href="#">Mutual Funds</a>
+      <a href="#">Active Investments</a>
+      <a href="#">Balance</a>
+      <a href="#">Logout</a>
+    </nav>
+  </div>
+</body>
+</html>
